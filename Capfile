@@ -7,6 +7,10 @@ require 'capistrano/deploy'
 # Includes rails tasks
 require 'capistrano/rails'
 
+# Include git hooks
+require "capistrano/scm/git"
+install_plugin Capistrano::SCM::Git
+
 # Includes tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:

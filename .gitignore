@@ -13,6 +13,7 @@ config/database.yml
 config/database.yml~
 config/master.key
 config/secrets.yml
+config/deploy/*.rb
 public/system/equipment_models/
 public/equipment_models/
 public/system
