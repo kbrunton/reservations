@@ -15,16 +15,8 @@
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'muttley.ph.ed.ac.uk', user: 'kbrunton', roles: %w(web app db)
-set :application, "reservations-test"
-set :repo_url, 'https://github.com/kbrunton/reservations.git'
+server 'localhost', user: 'hudson', roles: %w(web app db)
 
-# Default branch is :mastermore .Gem
-set :branch, "master"
-
-# Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/disk/sites/muttley-apps.ph.ed.ac.uk/webapps/reservations'
-set :param_file, "#{ENV['PARAM_FILE']}"
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
